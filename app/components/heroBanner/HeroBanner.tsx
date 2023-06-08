@@ -14,7 +14,7 @@ const dancing = Dancing_Script({
 
 function HeroBanner({}: Props) {
   return (
-    <div className="h-[60vh] relative flex justify-center items-center">
+    <div className="h-[90vh] lg:h-[80vh] relative flex justify-center items-center border-b-8 border-gray-400/20 ">
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 bg z-20" />
       <Image
         src={"/img/bannerHero.jpg"}
@@ -35,7 +35,7 @@ function HeroBanner({}: Props) {
             duration: 2.5,
           }}
         >
-          <Image src={"/logo.svg"} alt="VELIZ logo" width={300} height={50} />
+          <Image src={"/logo.svg"} alt="VELIZ logo" width={280} height={50} />
         </motion.div>
         <div className={dancing.className}>
           <motion.p
