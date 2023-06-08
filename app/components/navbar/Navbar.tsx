@@ -11,7 +11,7 @@ function Navbar({}: Props) {
     <header className="sticky top-0 z-50 flex items-center justify-around p-2 bg-white min-w-full">
       <section>
         <Image
-          src={"/logoPNG.png"}
+          src={"/logoM.svg"}
           width={65}
           height={100}
           className=""
