@@ -14,12 +14,12 @@ function Services({}: Props) {
     <div className="p-10 flex gap-6 justify-center item-center flex-wrap md:flex-nowrap">
       <motion.div
         initial={{
-          y: 100,
+          x: 100,
           opacity: 0,
         }}
         viewport={{ once: true }}
         whileInView={{
-          y: 0,
+          x: 0,
           opacity: 1,
         }}
         className="relative md:flex-1 min-h-[30vh] min-w-[80%] md:min-w-fit"

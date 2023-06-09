@@ -1,6 +1,7 @@
 import Container from "./components/Container";
 import Logistics from "./components/descriptions/Logistics";
 import Services from "./components/descriptions/Services";
+import Postvent from "./components/descriptions/postvent";
 import HeroBanner from "./components/heroBanner/HeroBanner";
 
 export default function Home() {
@@ -18,6 +19,12 @@ export default function Home() {
       <section className="bg-lightBlue">
         <Container>
           <Services />
+        </Container>
+      </section>
+      <div className="p-20" />
+      <section className="">
+        <Container>
+          <Postvent />
         </Container>
       </section>
     </>
