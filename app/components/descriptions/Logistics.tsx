@@ -15,13 +15,16 @@ function Logistics({}: Props) {
     <div className="p-10 flex gap-6 justify-center item-center flex-wrap md:flex-nowrap">
       <motion.div
         initial={{
-          y: 100,
+          x: -200,
           opacity: 0,
         }}
         viewport={{ once: true }}
         whileInView={{
-          y: 0,
+          x: 0,
           opacity: 1,
+        }}
+        transition={{
+          duration: 1.5,
         }}
         className="text-white text-right md:flex-1 flex flex-col justify-around"
       >
@@ -42,13 +45,16 @@ function Logistics({}: Props) {
       </motion.div>
       <motion.div
         initial={{
-          y: 100,
+          x: 100,
           opacity: 0,
         }}
         viewport={{ once: true }}
         whileInView={{
-          y: 0,
+          x: 0,
           opacity: 1,
+        }}
+        transition={{
+          duration: 1.8,
         }}
         className="relative md:flex-1 min-h-[30vh] min-w-[80%] md:min-w-fit"
       >

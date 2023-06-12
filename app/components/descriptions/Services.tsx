@@ -14,17 +14,20 @@ function Services({}: Props) {
     <div className="p-10 flex gap-6 justify-center item-center flex-wrap md:flex-nowrap">
       <motion.div
         initial={{
-          x: 100,
+          y: -100,
           opacity: 0,
         }}
         viewport={{ once: true }}
         whileInView={{
-          x: 0,
+          y: 0,
           opacity: 1,
+        }}
+        transition={{
+          duration: 2,
         }}
         className="relative md:flex-1 min-h-[30vh] min-w-[80%] md:min-w-fit"
       >
-        <Image src={"/img/services.jpg"} alt="" fill className="object-cover" />
+        <Image src={"/img/wash.jpg"} alt="" fill className="object-cover" />
       </motion.div>
       <motion.div
         initial={{
@@ -35,6 +38,9 @@ function Services({}: Props) {
         whileInView={{
           y: 0,
           opacity: 1,
+        }}
+        transition={{
+          duration: 1.8,
         }}
         className="text-white text-left md:flex-1 flex flex-col justify-around"
       >

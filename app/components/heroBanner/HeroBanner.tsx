@@ -26,13 +26,15 @@ function HeroBanner({}: Props) {
       <div className="z-40 absolute flex flex-col justify-center items-center">
         <motion.div
           initial={{
-            x: -2000,
+            opacity: 0,
+            scale: 1.5,
           }}
           animate={{
-            x: 0,
+            opacity: 1,
+            scale: 1,
           }}
           transition={{
-            duration: 2.5,
+            duration: 2,
           }}
         >
           <Image src={"/logo.svg"} alt="VELIZ logo" width={280} height={50} />

@@ -7,7 +7,7 @@ import HeroBanner from "./components/heroBanner/HeroBanner";
 export default function Home() {
   return (
     <>
-      <section className="pb-20" id="hero">
+      <section className="pb-36" id="hero">
         <HeroBanner />
       </section>
       <section className="bg-darkBlue">
@@ -15,18 +15,19 @@ export default function Home() {
           <Logistics />
         </Container>
       </section>
-      <div className="p-20" />
+      <div className="p-16" />
       <section className="bg-lightBlue">
         <Container>
           <Services />
         </Container>
       </section>
-      <div className="p-20" />
+      <div className="p-16" />
       <section className="">
         <Container>
           <Postvent />
         </Container>
       </section>
+      <div className="p-16" />
     </>
   );
 }

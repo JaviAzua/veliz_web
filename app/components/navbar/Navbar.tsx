@@ -1,15 +1,18 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { GrFacebook, GrInstagram } from "react-icons/gr";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 type Props = {};
 
 function Navbar({}: Props) {
+  const router = useRouter();
+
   return (
     <header className="sticky top-0 z-50 flex items-center justify-around p-2 bg-white min-w-full">
-      <section>
+      <section className="cursor-pointer" onClick={() => router.push("/")}>
         <Image
           src={"/logoM.svg"}
           width={65}
@@ -20,12 +23,19 @@ function Navbar({}: Props) {
       </section>
       <section>
         <ul className="flex gap-10">
-          <li className="menu_item">
-            <GrInstagram size={28} />
-          </li>
-          <li className="menu_item">
-            <GrFacebook size={28} />
-          </li>
+          <Link href={"https://www.instagram.com/veliz.1976/"} target="_blank">
+            <li className="menu_item">
+              <GrInstagram size={34} />
+            </li>
+          </Link>
+          <Link
+            href={"https://www.facebook.com/DistribuidoraVeliz1976/"}
+            target="_blank"
+          >
+            <li className="menu_item">
+              <GrFacebook size={34} />
+            </li>
+          </Link>
         </ul>
       </section>
     </header>

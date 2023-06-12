@@ -8,18 +8,15 @@
   }
 
   body {
-    @apply bg-gray-100;
+    @apply bg-gray-200;
   }
 }
 
 @layer components {
   .menu_item {
-    @apply cursor-pointer hover:scale-110 transition duration-300;
+    @apply cursor-pointer hover:scale-110 transition duration-300  text-darkBlue;
   }
-}
-
-@layer components {
-  .arrowSlide {
-    @apply w-10 h-10;
+  .map-container {
+    @apply w-full h-full;
   }
 }

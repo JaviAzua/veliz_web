@@ -11,7 +11,7 @@ const dancing = Dancing_Script({
 
 function Postvent({}: Props) {
   return (
-    <div className="p-10 bg-gray-200 rounded-lg flex flex-col gap-6 justify-center item-center">
+    <div className="p-10 bg-gray-100 rounded-lg flex flex-col gap-6 justify-center item-center">
       <motion.div
         initial={{
           y: 100,
