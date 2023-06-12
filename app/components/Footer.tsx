@@ -8,7 +8,7 @@ type Props = {};
 
 function Footer({}: Props) {
   return (
-    <footer className="py-6 bg-white flex justify-center items-center">
+    <footer className="py-6 relative bg-white flex justify-center items-center">
       <section className="flex flex-col items-center">
         <Image
           src={"/logoM.svg"}
@@ -45,19 +45,22 @@ function Footer({}: Props) {
             href={"https://www.facebook.com/DistribuidoraVeliz1976/"}
             target="_blank"
           >
-            <div className="flex item-center gap-2">
+            <div className="flex item-center gap-2 hover:underline cursor-pointer">
               <GrFacebook className=" text-darkBlue" />
               <p className="text-sm font-semibold">@DistribuidoraVeliz1976</p>
             </div>
           </Link>
           <Link href={"https://www.instagram.com/veliz.1976/"} target="_blank">
-            <div className="flex item-center gap-2 ">
+            <div className="flex item-center gap-2 hover:underline cursor-pointer">
               <GrInstagram className=" text-darkBlue" />
               <p className="text-sm font-semibold">@veliz.1976</p>
             </div>
           </Link>
         </div>
       </section>
+      <p className="absolute bottom-0 right-0 text-[0.5rem]">
+        Sitio web creado por Javier Azua
+      </p>
     </footer>
   );
 }
